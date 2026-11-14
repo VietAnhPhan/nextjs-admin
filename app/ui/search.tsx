@@ -14,7 +14,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     let isDebouncing = false;
 
     setTimeout(() => {
-      if (isDebouncing || searchTerm == '') return
+      if (isDebouncing) return
       console.log('first run')
       handleSearch(searchTerm)
     }, 1000)
